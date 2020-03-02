@@ -1,25 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import mavise from './img/Mavise.jpg';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <main className='App'>
+      <header className='App-header'>
+        <h1>Sally Student's Resume</h1>
       </header>
-    </div>
+      <img src={mavise} alt='totally not sally' />
+      <h2>Education:</h2>
+        <ul>
+          <li>M.S, Chemical Engineering, University of Somewhere, 2015 – 2018</li><br />
+          <li>B.Eng, Chemical Engineering, University of Somewhere, 2011 - 2015</li>
+        </ul>
+      <h2>Employment History:</h2>
+        <ul>
+          <li>Kumon Learning Center, Science Tutor, 2015 - Present</li>
+              <p>lorem ipsum</p><br />
+          <li>Starbucks, Barista, 2010 - 2015</li>
+              <p>lorem ipsum</p>
+        </ul>
+    </main>
   );
 }
 
